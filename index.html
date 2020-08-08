@@ -4,44 +4,20 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>WhatsLink</title>
-	<link rel="stylesheet" href="css/style.css" >
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="css/stile.css">
 </head>
 <body>
-	<div>
-    	<h5 class="center-align">WhatsLink</h5>
-  	</div>
-	<div class="seila">
-		<div class="row">
-	      <div class="l12 m12 s12">
-	        <div class="input-field col s12">
-	          <input id="icon_telephone" type="tel" class="validate">
-	          <label for="last_name">Digite seu numero</label>
-	        </div>
-	      </div>
-	    </div>
-
-	  	<div class="row">
-	      <div class="l12 m12 s12">
-	        <div class="input-field col s12">
-	          <input id="last_name" type="text" class="validate">
-	          <label for="last_name">Digite sua mensagens</label>
-	        </div>
-	      </div>
-	  	</div>
-  	</div>
-  	<div class="row center">
-  		<a class="a waves-effect waves-light btn-small center">Gerar</a>
-  	</div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-  	var nome document.getElementById("last_name");
-
-	function alerta() {
-		alert("oi");
-	}
-
-  </script>
+	<h3>Whats Link</h3>
+	<div class="content">
+		<input id="mensagens" required type="text">
+		<p>Sua mensagens</p>
+		<input id="numero" required type="tel">
+		<p>Seu DDD + numero</p>
+	</div>
+	<button id="botao" onclick="gera()">Gerar</button>
+	<div class="resposta">
+		<a href="#" id="url"></a>
+	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>
